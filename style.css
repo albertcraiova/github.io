@@ -1,0 +1,232 @@
+* {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.nav,
+.nav li {
+  display: inline;
+  /* height: 56px; */
+}
+
+.menu li {
+  margin: auto;
+  padding: 50px 50px;
+  display: inline;
+  margin-top: 0px;
+  text-transform: uppercase;
+  font-size: large;
+}
+
+.logo {
+  margin: auto;
+  padding-left: 55px;
+  padding-right: 55px;
+  display: inline;
+  float: left;
+}
+
+.dropdown-link {
+  color: black;
+}
+
+.dropdown-link:hover {
+  color: white;
+}
+
+.dropdown:hover {
+  background-color: rgb(51, 55, 65);
+  color: white;
+  border-bottom: rgb(132, 188, 34);
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+}
+
+.space {
+  padding: 15px;
+}
+
+hr {
+  opacity: 0.7;
+}
+
+.login-modal {
+  /* display: none; */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 7%;
+  border-color: black;
+  border-radius: 10px;
+  /* margin: 0 auto; */
+  z-index: 10;
+}
+
+.login-modal h1 {
+  text-align: center;
+}
+
+.login-modal input {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  border-style: solid;
+  padding: 15px 100px;
+  border-color: rgb(215, 215, 215);
+  opacity: 0.9;
+}
+
+.forgot-password {
+  text-decoration: none;
+  padding-left: 180px;
+  color: rgb(132, 188, 34);
+}
+
+.login-modal .btn-login {
+  align-items: center;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  margin: 15px 2px;
+  background-color: rgb(132, 188, 34);
+  padding: 15px 100px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-size: 20px;
+  border-color: white;
+}
+
+.login-btn-noacc {
+  text-align: center;
+  align-items: center;
+  margin-top: 35px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.hidden {
+  display: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+.user-modal {
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.close-modal {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+  display: none;
+}
+
+.flex-container {
+  display: inline-flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+/* Dropdown Button */
+.dropbtn {
+  background-color:rgb(255, 255, 255);
+  color:black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(20, 16, 16, 0.2);
+  z-index: 1;
+  background-color: rgb(58, 55, 55);
+  width : fit-content;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color:white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  background-color: rgb(58, 55, 55)
+  
+}
+
+/* Change color of dropdown links on hover */
+
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: flex;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: rgb(58, 55, 55 )}
+.dropdown:hover .dropbtn {color:white}
+
+
+
+.row {
+  display: flex;
+  flex-direction: row
+  
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.justify-content{
+  justify-content: space-around;
+}
+
+.margin{
+  margin-left: 135px;
+  margin-right: 120px;
+}
+

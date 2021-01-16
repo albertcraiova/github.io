@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OSF COMERCE</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,400;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="nav">
+        <ul class="logo">
+            <li>
+                <a href="index.html"><img src="images/logov1.png" /></a>
+            </li>
+        </ul>
+        <ul class="menu">
+            <div class="dropdown">
+                <button class="dropbtn">SERVICES</button>
+                <div class="dropdown-content">
+
+                    <div class="column">
+                        <div class="row">
+                            <a class="margin" href="#">PRODUCT CATEGORIES</a>
+                        </div>
+                        <div class="row">
+                            <div class="column margin">
+                                <a href="#">Accesories</a>
+                                <a href="#">Alcohol</a>
+                                <a href="#">Art</a>
+                                <a href="#">Books</a>
+                                <a href="#">Drink</a>
+                                <a href="#">Electronics</a>
+                                <a href="#">Flowers & Plants</a>
+                                <a href="#">Food</a>
+                            </div>
+
+                            <div class="column margin">
+                                <a href="#">Gadgets</a>
+                                <a href="#">Garden</a>
+                                <a href="#">Grocery</a>
+                                <a href="#">Home</a>
+                                <a href="#">Jewelry</a>
+                                <a href="#">Kids & Baby</a>
+                                <a href="#">Men's Fashion</a>
+                                <a href="#">Mobile</a>
+                            </div>
+
+                            <div class="column margin">
+                                <a href="#">Motorcycles</a>
+                                <a href="#">Movies</a>
+                                <a href="#">Music</a>
+                                <a href="#">Office</a>
+                                <a href="#">Pets</a>
+                                <a href="#">Romantic</a>
+                                <a href="#">Sport</a>
+                                <a href="#">Toys</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="row">
+                            <a class="margin" href="#">SALE</a>
+                        </div>
+                        <div class="row">
+                            <div class="column margin">
+                                <a href="#">Accesories</a>
+                                <a href="#">Alcohol</a>
+                                <a href="#">Books</a>
+                                <a href="#">Drink</a>
+                                <a href="#">Electronics</a>
+                                <a href="#">Flowers & Plants</a>
+                                <a href="#">Food</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <li>Company</li>
+            <li>Library</li>
+            <li>Contact Us</li>
+            <li class="lang">EN</li>
+            <li class="currency">$ US</li>
+            <li><a href="#"><img src="images/search.png"></a></li>
+            <li><button class="user-modal"><img src="images/user.png"></button></li>
+
+
+            <li><a href="#"><img src="images/wishlist.png"></a></li>
+            <li><a href="#"><img src="images/bag.png"></a></li>
+        </ul>
+        </div>
+        <div class="space"></div>
+    </nav>
+
+    <hr>
+    <form class="login-modal hidden">
+        <div>
+            <button class="close-modal">&times;</button>
+            <h1><b>Sing in</b></h1>
+            <label for="email">Email</label>
+            <br>
+            <input id="email" name="email" type="text">
+            <br>
+            <label for="password">Password</label>
+            <a href="#" class="forgot-password">forgot password</a>
+            <br>
+            <input id="password" name="password" type="password">
+
+            <br>
+            <div class="login-btn-noacc">
+                <button type="button" class="btn-login">LOGIN</button>
+                <br>
+                <a href="#" style="color: rgb(132, 188, 34); text-align: center;">I don't have an account </a>
+            </div>
+
+        </div>
+
+
+    </form>
+    <div class="overlay hidden"></div>
+</body>
+<script src="apps.js"></script>
+
+
+
+<footer class="flex-container">
+    <div class="flex-item1">
+        <ul><b> @ Copyright <span id="year"></span></b> </ul>
+        <ul><b> All Rights Reserved</b></ul>
+        <script>
+            document.getElementById("year").innerHTML = new Date().getFullYear();
+        </script>
+
+        <ul><b>CONTACT</b></ul>
+        <ul><b>Headquarters</b></ul>
+        <ul><b>5600 , Blvd des Galeriese , Bur 530</b></ul>
+        <ul><b>Quebec , Quebec , G2K 2H6</b></ul>
+        </br>
+        <ul><b>contact@osf-global.com</b></ul>
+        </br>
+        <ul><b>+1 (888) 548-4344</b></ul>
+        </br>
+    </div>
+
+    <div class="flex-item2">
+        <ul><b>CATEGORIES</b></ul>
+        <ul>Alcohol</ul>
+        <ul>Art</ul>
+        <ul>Books</ul>
+        <ul>Drink</ul>
+        <ul>Electronics</ul>
+        </br>
+    </div>
+
+    <div class="flex-item3">
+        <ul>Home</ul>
+        <ul>Jewelry</ul>
+        <ul>Kids & Baby</ul>
+        <ul>Men's Fashion</ul>
+        <ul>Mobile</ul>
+        <ul>Motorcycles</ul>
+        <ul>Movies</ul>
+        <ul>Music</ul>
+    </div>
+
+    </br>
+
+    <div class="flex-item4">
+        <ul>Sport</ul>
+        <ul>Toys</ul>
+        <ul>Travel</ul>
+        <ul>Women's Fasion</ul>
+    </div>
+
+    </br>
+
+    <div class="flex-item5">
+        <ul><b>About</b></ul>
+        </br>
+        <ul>About us</ul>
+        <ul>Delivery</ul>
+        <ul>Testimonials</ul>
+        <ul>Contact</ul>
+    </div>
+</footer>
+
+</html>
