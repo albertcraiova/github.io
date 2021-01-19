@@ -1,0 +1,69 @@
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 35px;
+    font-size:50px
+}
+.separator::before, .separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #000;
+}
+.separator::before {
+    margin-right: .25em;
+}
+.separator::after {
+    margin-left: .25em;
+}
+
+
+
+
+
+#input_container {  
+    position:relative;
+    padding:0 0 0 20px;
+    margin:0 20px;
+    background:#ddd;
+    direction: rtl;
+    width: 200px;
+}
+#input {
+    height:20px;
+    margin:0;
+    padding-right: 30px;
+    width: 100%;
+    direction: ltr;
+}
+#input_img {
+    position:absolute;
+    bottom:2px;
+    right:5px;
+    width:24px;
+    height:24px;
+}
+
+#text{
+   float:right
+}
+
+#oops {
+    font-size: 50px;
+    color:green
+}
+
+.link{
+    color:green;
+    
+}
+
+.flex-404 {
+  flex-direction: column;
+}
+
+.center {
+    text-align:center;
+    padding-top:75px;
+    font-size: 50px;
+}
