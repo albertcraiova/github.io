@@ -1,3 +1,4 @@
+
 * {
   font-family: 'Roboto Condensed', sans-serif;
 }
@@ -233,70 +234,28 @@ a:visited {
 /* BODY */
 
 .separator {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    padding: 35px;
-    font-size:20px;
-    
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 35px;
+  font-size:20px;
+  
 }
 .separator::before, .separator::after {
-    content: '';
-    flex: 1;
-    border-bottom: 1px solid #000;
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #000;
 }
 .separator::before {
-    margin-right: .25em;
+  margin-right: .25em;
 }
 .separator::after {
-    margin-left: .25em;
+  margin-left: .25em;
 }
 
 
 /* PRODUCT TILES */
 
-/*.grid {
-   display: grid;
-  grid-template-columns: repeat(4, minmax(240px, 1fr));
-  grid-gap: 20px;
-  align-items:stretch; 
-  display: grid;
-  
-
-}
-
-.grid > article {
-  border: 1px solid #ccc;
-  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
-}
-
-.grid > article img {
-  position:relative;
-  height:auto;
-  display: block;
-  max-width: 100%;
-}
-
-.grid .text {
-  padding: 20px;
-  text-align: center;
-}
-
-.grid .text h3 {
-  font-size: 1.4rem;
-  font-family: 'Roboto Condensed', sans-serif;
-}
-
-.grid .text p {
-  font-size: 1.5rem;
-}
-
-.grid .text p a {
-  text-decoration: none;
-  font-weight: bold;
-  color: #555;
-  font-family: 'Courgette', cursive;
-}*/
 
 
 
@@ -309,8 +268,10 @@ a:visited {
   width: 100%;
   height: auto;
   display: block;
-  z-index:0
+ 
 }
+
+
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -335,8 +296,7 @@ h2, h3, a{
   max-width: 1024px;
   margin: 0 auto;
   font-size: 0;
-  
-  
+
 }
 
 
@@ -346,33 +306,61 @@ h2, h3, a{
   margin: 1%;
   display: inline-block;
   transition:1s;
+  position:relative
 }
 
 .middle {
-  transition: .5s ease;
-  opacity: 0;
+  transition: 0.5s ease;
+  opacity: 0.5;
   position: absolute;
   top: 100%;
   left: 100%;
+  
+  text-align: center;
+  top: 0; 
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(12, 235, 42, 0.918);
+  display: none;
+  text-align:center;
+  background-image: -moz-linear-gradient( 90deg, rgb(28,193,103) 0%, rgb(46,211,162) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(28,193,103) 0%, rgb(46,211,162) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(28,193,103) 0%, rgb(46,211,162) 100%);
+  
+}
+
+
+.grid-item:hover .image1 {
+  opacity: 0.2;
+}
+
+
+.grid-item:hover .middle {
+  opacity: 0.93;
+  display:inline-block
+ 
+}
+
+.icon {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
-}
-
-.grid-item:hover .image {
-  opacity: 0,3;
-}
-
-.grid-item:hover .middle {
-  opacity: 1;
+  color:red;
+  border-radius: 50%;
+  display:inline-block;
  
 }
-.text {
-  background-color: #4CAF50;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
-}
+
+
+
+
+
 
 
 .view-product{
@@ -421,7 +409,7 @@ h2, h3, a{
 }
 
 .button-product {
-  position:absolute;
+  position:relative;
     top:50%;
     left:50%;
     opacity:0;
@@ -431,5 +419,85 @@ h2, h3, a{
 
 /* banner carousel */
 
+  
 
+.container {
+  width: 50%;
+  margin:20px auto;
+  display:inline-flex
+  
+ 
+}
+.carousel {
+ 
+  height: 400px;
+  overflow: hidden;
+  
+  position: relative;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.1);
+  
+}
+.slider {
+  display:flex;
+  height: 100%;
+  width: 400%;
+}
+.slider section {
+  flex-basis: 100%;
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+  color:white;
+  
+  padding-left:100px;
+  padding-top:50px
+}
+.left, .right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.arrow i {
+  font-size: 70px;
+  -webkit-user-select: none;
+  color: #ffffff;
+}
+.left {
+  left: 10px;
+}
+.right {
+  right: 10px;
+}
+.control ul {
+  list-style: none;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin: 0;
+  padding: 0;
+  transform: translate(-50%);
+}
+.control ul li {
+  width: 10px;
+  height: 10px;
+  background: #333;
+  border: 2px solid #333;
+  border-radius: 50px;
+  margin: 10px;
+  cursor: pointer;
+}
+.control ul li.selected {
+  background: transparent;
+}
 
+.section1{
+  
+  bottom:0;
+  left:0;
+  right:0;
+  
+}
