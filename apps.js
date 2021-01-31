@@ -62,3 +62,6 @@ right.addEventListener('click', function() {
   indicatorParent.children[index].classList.add('selected');
   slider.style.transform = 'translateX(' + (index) * -25 + '%)';
 });
+
+
+
